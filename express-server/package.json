@@ -1,0 +1,15 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "This is an intro to express servers.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Juan Marin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

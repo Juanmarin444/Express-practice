@@ -1,0 +1,17 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "This is an intro to node projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Marin",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^8.12.2",
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0"
+  },
+  "devDependencies": {}
+}
