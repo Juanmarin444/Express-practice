@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #282c33;
+	--light-color: #9fa3dd;
+	--dark-color-a: #31343a;
 	--dark-color-b: #202329;
-	/* --dark-color-b: #7386ff; */
-	--light-color: #e6e9ff;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -18,8 +17,11 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
+	background: var(--dark-color-a);
 	margin: 20px;
+	display: flex;
+	align-items: center;
+	height: 90vh;
 }
 
 ul {
@@ -33,24 +35,25 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
-	background: var(--light-color);
-	color: var(--dark-color-a);
+	background: var(--dark-color-a);
+	color: #dbdbdb;
 	border: 0;
 	font-size: 17px;
+	font-weight: 600;
 }
 
 /* Chat Page */
 
 .chat-container {
 	max-width: 1100px;
-	background: #fff;
+	background: var(--dark-color-b);
 	margin: 30px auto;
 	overflow: hidden;
 }
 
 .chat-header {
-	background: var(--dark-color-a);
-	color: #fff;
+	background: var(--light-color);
+	color: #1e2435;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding: 15px;
@@ -66,7 +69,8 @@ a {
 
 .chat-sidebar {
 	background: var(--dark-color-b);
-	color: #fff;
+	color: #dbdbdb;
+
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
 }
@@ -90,30 +94,31 @@ a {
 	padding: 30px;
 	max-height: 500px;
 	overflow-y: scroll;
+	color: #dbdbdb;
 }
 
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: var(--dark-color-a);
 	border-radius: 5px;
 }
 
 .chat-messages .message .meta {
 	font-size: 15px;
 	font-weight: bold;
-	color: var(--dark-color-b);
+	color:#ffffffbe;
 	opacity: 0.7;
 	margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
-	color: #777;
+	color: #bdbdbd;
 }
 
 .chat-form-container {
 	padding: 20px 30px;
-	background-color: var(--dark-color-a);
+	background-color: var(--light-color);
 }
 
 .chat-form-container form {
@@ -129,15 +134,17 @@ a {
 
 /* Join Page */
 .join-container {
+	width: 90%;
 	max-width: 500px;
+	min-width: 300px;
 	margin: 80px auto;
-	color: #fff;
+	color: #1e2435;
 }
 
 .join-header {
 	text-align: center;
 	padding: 20px;
-	background: var(--dark-color-a);
+	background: var(--light-color);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -178,6 +185,13 @@ a {
 	margin-top: 20px;
 	width: 100%;
 }
+
+input, select {
+	background: #cccccc;
+	border: none;
+}
+
+
 
 @media (max-width: 700px) {
 	.chat-main {
